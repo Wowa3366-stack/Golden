@@ -20,7 +20,6 @@ body {
 padding-right: 15px;
 margin-left: auto;
 margin-right: auto; */
-  outline: 1px solid red;
 }
 .header_flex {
   display: flex;
@@ -118,17 +117,22 @@ img {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
-  padding-bottom: 114px;
+  margin-bottom: 114px;
 }
 .footer_form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
-.form_left,
-.form_right {
+.footer_div_input{
+display: flex;
+}
+.form_left{
   display: flex;
   flex-direction: column;
   gap: 15px;
+  padding-right: 30px;
 }
 .footer_input {
   font-family: var(--font-family);
@@ -138,6 +142,10 @@ img {
   text-transform: uppercase;
   color: #bbb;
   outline: none;
+  height:52px;
+  width:457px; 
+  border: none; 
+  border-radius: 3px;
 }
 .textarea {
   font-family: var(--font-family);
@@ -146,7 +154,13 @@ img {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #bbb;
+  padding-top: 12px;
+  padding-left: 20px;
+  border: none;
+  border-radius: 3px;
   outline: none;
+  height: 212px;
+  width:458px
 }
 .footer_button {
   font-family: var(--font-family);
